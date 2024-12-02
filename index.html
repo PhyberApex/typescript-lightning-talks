@@ -1,48 +1,165 @@
-<h1>TypeScript Lightning Talks</h1>
-<p>These are the presentations from the <em>Lightning Talks</em> series by @PhyberApex.</p>
-<table>
-<thead>
-<tr>
-<th>Topic</th>
-<th>Date</th>
-<th>Live</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Branded Types</td>
-<td>2024-08-01</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/01-branded-types/">Live</a></td>
-</tr>
-<tr>
-<td>The never Type</td>
-<td>2024-08-08</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/02-the-never-type/">Live</a></td>
-</tr>
-<tr>
-<td>Interface vs Type Alias</td>
-<td>2024-08-22</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/03-interface-vs-type-alias/">Live</a></td>
-</tr>
-<tr>
-<td>Don't use enums</td>
-<td>2024-08-29</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/04-dont-use-enums/">Live</a></td>
-</tr>
-<tr>
-<td>Dynamic Return Types in TypeScript</td>
-<td>2024-09-05</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/05-return-type-by-parameter/">Live</a></td>
-</tr>
-<tr>
-<td>Conditional Types</td>
-<td>2024-10-31</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/06-conditional-types/">Live</a></td>
-</tr>
-<tr>
-<td>Indexed Types</td>
-<td>2024-11-28</td>
-<td><a href="https://phyberapex.github.io/typescript-lightning-talks/07-indexed-types/">Live</a></td>
-</tr>
-</tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Lightning Talks by PhyberApex</title>
+    <style>
+        :root {
+            --primary-color: #3178c6;
+            --secondary-color: #235a97;
+            --background-color: #f5f5f5;
+            --card-background: #ffffff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            margin-top: 0.5rem;
+        }
+
+        .talks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .talk-card {
+            background: var(--card-background);
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .talk-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .talk-title {
+            color: var(--primary-color);
+            font-size: 1.25rem;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .talk-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .view-talk {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .view-talk:hover {
+            background-color: var(--secondary-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TypeScript Lightning Talks</h1>
+            <p class="subtitle">A series of lightning talks by @PhyberApex exploring TypeScript concepts</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="talks-grid">
+            
+            <div class="talk-card">
+                <h2 class="talk-title">Branded Types</h2>
+                <div class="talk-date">August 1, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/01-branded-types/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">The never Type</h2>
+                <div class="talk-date">August 8, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/02-the-never-type/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">Interface vs Type Alias</h2>
+                <div class="talk-date">August 22, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/03-interface-vs-type-alias/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">Don't use enums</h2>
+                <div class="talk-date">August 29, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/04-dont-use-enums/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">Dynamic Return Types in TypeScript</h2>
+                <div class="talk-date">September 5, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/05-return-type-by-parameter/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">Conditional Types</h2>
+                <div class="talk-date">October 31, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/06-conditional-types/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">Indexed Types</h2>
+                <div class="talk-date">November 28, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/07-indexed-types/" class="view-talk">View Talk</a>
+            </div>
+
+            <div class="talk-card">
+                <h2 class="talk-title">Don't use shorthand syntax</h2>
+                <div class="talk-date">December 6, 2024</div>
+                <a href="https://phyberapex.github.io/typescript-lightning-talks/08-dont-use-shorthand-syntax/" class="view-talk">View Talk</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
