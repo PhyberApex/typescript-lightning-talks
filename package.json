@@ -9,7 +9,7 @@
     "lint": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.22.0",
+    "@antfu/eslint-config": "^3.0.0",
     "@iconify/json": "^2.2.226",
     "@slidev/cli": "^0.49.16",
     "@slidev/client": "^0.49.16",
