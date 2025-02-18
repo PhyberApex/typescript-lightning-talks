@@ -1,1 +1,0 @@
-import{o,b as t,f as s}from"../modules/vue-41SqlowQ.js";import{_ as r}from"../index-BgU6-y2N.js";const c={},a={class:"slidev-layout default"};function n(e,l){return o(),t("div",a,[s(e.$slots,"default")])}const f=r(c,[["render",n]]);export{f as I};
